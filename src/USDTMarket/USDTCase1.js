@@ -39,6 +39,7 @@ let getAnswer= function(){
             MSArray=JSON.parse(MSObject);
             console.log(`MarketSummaries:${MSArray.data}`);
         });
+        //To on the connection
         res.on('end',()=>{
             console.log('No more data');
         });
