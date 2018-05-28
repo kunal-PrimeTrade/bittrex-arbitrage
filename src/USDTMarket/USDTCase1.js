@@ -14,6 +14,7 @@ const KEY_BID="Bid";
 let getAnswer= function(){
     console.log("2 Passed");
     let relativeUrl=new URL('public/getmarkets',BASE_URL);
+    //Get the connection
     let req=https.get(relativeUrl,(res)=>{
         console.log(`Status:${res.statusCode}`);
         res.on('data',(chunk)=>{
